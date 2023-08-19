@@ -16,8 +16,8 @@ function FrescoCard({ frescoNum }) {
                 <CardContent>
                     {/* Iframe to display HTML content */}
                     <iframe
-                        src={`/fresco/fresco.html?data=${frescoNum}.hz`}
-                        title="Bixel World"
+                        src={`/fresco/fresco.html?data=${frescoNum}.fresc`}
+                        title={`Fresco ${frescoNum}`}
                         width="100%"
                         height="300px" // you can adjust height as needed
                         frameBorder="0"
