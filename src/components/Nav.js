@@ -22,15 +22,13 @@ function Nav() {
                         /> */}
                     </RouterLink>
                     <Typography
-                        variant='h4'
+                        variant='h6'
                         sx={{
                             fontWeight: 700,
                             fontFamily: " 'Chakra Petch', sans-serif",
                         }}
                     >
-                        <span style={{ color: '#7291c6' }}>R</span>
-                        <span style={{ color: '#f3f3f3' }}>ecursive</span>
-                        <span style={{ color: '#7291c6' }}> Psyop</span>
+                        Recursive psyop
                     </Typography>
                 </Stack>
                 <Stack direction='row' display='flex' alignContent='center' alignItems='center'>
