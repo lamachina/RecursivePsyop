@@ -15,8 +15,20 @@ a {
 }
 
 body {
-  background: #333;
+  background: #222;
   height: 100%;
+}
+
+.punkbg {
+  background-image: url('/public/image_611.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 500px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /* 
@@ -79,7 +91,7 @@ body {
   padding: 1.5rem;
   flex-direction: column;
   align-items: center;
-  background: #333333;
+  background: #222;
   gap: 1rem;
   border-radius: 5%;
 

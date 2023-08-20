@@ -14,12 +14,10 @@ function Nav() {
                 }}>
                 <Stack direction='row' display='flex' alignContent='center' alignItems='center' gap='1rem'>
                     <RouterLink to="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
-                        {/* <Avatar
-                            variant='circular'
-                            className='App-logo'
-                            src='/bixel.jpg'
-
-                        /> */}
+                        <Avatar
+                            variant='square'
+                            src='/punk.png'
+                        />
                     </RouterLink>
                     <Typography
                         variant='h6'
@@ -28,19 +26,17 @@ function Nav() {
                             fontFamily: " 'Chakra Petch', sans-serif",
                         }}
                     >
-                        Recursive psyop
+                        Recursive Psyop
                     </Typography>
                 </Stack>
                 <Stack direction='row' display='flex' alignContent='center' alignItems='center'>
-                    <Link component={RouterLink} to="/" color="inherit" underline="none">
-                        <Button sx={{ fontFamily: " 'Chakra Petch', sans-serif", color: "inherit" }} >Home</Button>
+
+                    <Link component={RouterLink} to="/art" color="inherit" underline="none">
+                        <Button sx={{ fontFamily: " 'Chakra Petch', sans-serif", }} color="inherit">ART</Button>
                     </Link>
-                    <Link component={RouterLink} to="/fresc" color="inherit" underline="none">
-                        <Button sx={{ fontFamily: " 'Chakra Petch', sans-serif", }} color="inherit">1</Button>
+                    <Link component={RouterLink} to="/team" color="inherit" underline="none">
+                        <Button sx={{ fontFamily: " 'Chakra Petch', sans-serif", color: "inherit" }} >TEAM</Button>
                     </Link>
-                    {/* <Link component={RouterLink} to="/bixel2" color="inherit" underline="none">
-                        <Button sx={{ fontFamily: " 'Chakra Petch', sans-serif", }} color="inherit">Biixel</Button>
-                    </Link> */}
                 </Stack>
 
             </Toolbar>
