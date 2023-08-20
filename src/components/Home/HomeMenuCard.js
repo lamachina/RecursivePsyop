@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, CardContent, CardMedia, Typography, Link, Stack, Button } from '@mui/material';
 import { Link as RouterLink } from 'react-router-dom';
 
-function HomeMenuCard() {
+function HomeMenuCard({ imageSrc, title, numberSupply, paragraph, linkUrl }) {
     return (
         <Card raised
             sx={{
@@ -16,7 +16,7 @@ function HomeMenuCard() {
             <CardContent sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                 <CardMedia
                     component="img"
-                    image="/bg.jpg"
+                    image={imageSrc}
                     alt="Home Menu Image"
                     sx={{
                         objectFit: 'contain',
@@ -25,22 +25,21 @@ function HomeMenuCard() {
                 />
 
                 <Typography variant="h4" fontWeight={700} sx={{ fontFamily: " 'Chakra Petch', sans-serif", color: '#000', mt: 2 }}>
-                    FRESC ORDINALS
+                    {title}
                 </Typography>
 
                 <Stack direction='column' gap='1rem' width='80%' display='flex' alignItems='center'>
-                    <Typography fontFamily="monospace" color='#bbb'>77 pieces
-                    </Typography>
+                    <Typography fontFamily="monospace" color='#bbb'>{numberSupply}</Typography>
                     <Typography fontFamily="'Chakra Petch', sans-serif" color='#f3f3f3'>
-                        With the innovative use of recursive inscription, FRESC invites connoisseurs to enter into a new dimension of digital artistry.
+                        {paragraph}
                     </Typography>
                 </Stack>
 
                 <Stack direction='row' gap='1rem' justifyContent='space-between' alignItems='center' sx={{ mt: 3 }}>
-                    <Button component={RouterLink} to="/fresc" variant="contained" sx={{ backgroundColor: "#56a0cc" }}>
+                    <Button component={RouterLink} to={linkUrl} variant="contained" sx={{ backgroundColor: "#56a0cc" }}>
                         DISCOVER
                     </Button>
-                    <Button disabled component={RouterLink} to="/fresc" variant="contained" sx={{ backgroundColor: "#cc9ad2" }}>
+                    <Button disabled component={RouterLink} to={linkUrl} variant="contained" sx={{ backgroundColor: "#cc9ad2" }}>
                         MINT NOW
                     </Button>
                 </Stack>

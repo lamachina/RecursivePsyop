@@ -28,9 +28,9 @@ function Team() {
                     <Button size='large' href='https://twitter.com/RecursivePsyop' target='_blank' variant="contained" sx={{ backgroundColor: "#333" }}>
                         𝕏
                     </Button>
-                    <Button disabled size='large' component={RouterLink} to="/fresc" variant="contained" sx={{ backgroundColor: "#56a0cc" }}>
+                    {/*  <Button disabled size='large' component={RouterLink} to="/fresc" variant="contained" sx={{ backgroundColor: "#56a0cc" }}>
                         JOIN US
-                    </Button>
+                    </Button> */}
                 </Stack>
             </CardContent>
         </Card>
