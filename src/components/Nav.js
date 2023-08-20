@@ -8,8 +8,9 @@ function Nav() {
             <Toolbar
                 sx={{
                     justifyContent: 'space-between',
-                    background: '#333333',
-                    borderBottom: '0.2rem solid #333333',
+                    background: '#000',
+                    borderBottom: '0.2rem solid #303030',
+                    boxShadow: '1px 1px 21px #000'
                 }}>
                 <Stack direction='row' display='flex' alignContent='center' alignItems='center' gap='1rem'>
                     <RouterLink to="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
@@ -27,20 +28,22 @@ function Nav() {
                             fontFamily: " 'Chakra Petch', sans-serif",
                         }}
                     >
-                        Recursive Psyop
+                        <span style={{ color: '#7291c6' }}>R</span>
+                        <span style={{ color: '#f3f3f3' }}>ecursive</span>
+                        <span style={{ color: '#7291c6' }}> Psyop</span>
                     </Typography>
                 </Stack>
-                {/*    <Stack direction='row' display='flex' alignContent='center' alignItems='center'>
+                <Stack direction='row' display='flex' alignContent='center' alignItems='center'>
                     <Link component={RouterLink} to="/" color="inherit" underline="none">
-                        <Button sx={{ fontFamily: " 'Chakra Petch', sans-serif", }} color="inherit">Bixology</Button>
+                        <Button sx={{ fontFamily: " 'Chakra Petch', sans-serif", color: "inherit" }} >Home</Button>
                     </Link>
-                    <Link component={RouterLink} to="/bixel1" color="inherit" underline="none">
-                        <Button sx={{ fontFamily: " 'Chakra Petch', sans-serif", }} color="inherit">Bixel</Button>
+                    <Link component={RouterLink} to="/fresc" color="inherit" underline="none">
+                        <Button sx={{ fontFamily: " 'Chakra Petch', sans-serif", }} color="inherit">1</Button>
                     </Link>
-                    <Link component={RouterLink} to="/bixel2" color="inherit" underline="none">
+                    {/* <Link component={RouterLink} to="/bixel2" color="inherit" underline="none">
                         <Button sx={{ fontFamily: " 'Chakra Petch', sans-serif", }} color="inherit">Biixel</Button>
-                    </Link>
-                </Stack> */}
+                    </Link> */}
+                </Stack>
 
             </Toolbar>
         </AppBar>

@@ -65,13 +65,16 @@ body {
   }
 }
 
-.bixel1bg {
+.home {
   display: flex;
   flex-direction: row;
   background-repeat: repeat-y;
   flex-wrap: wrap;
   align-items: center;
+  width: 100%;
   justify-content: center;
+  background-image: url('/public/bgnuke.jpg');
+  background-size: cover;
 }
 
 
