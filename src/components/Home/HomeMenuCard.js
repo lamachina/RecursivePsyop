@@ -13,7 +13,7 @@ function HomeMenuCard() {
                 boxShadow: ' 0px 0px 20px 0px rgba(0,0,0,0.5);'
             }}
         >
-            <CardContent>
+            <CardContent sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                 <CardMedia
                     component="img"
                     image="/bg.jpg"
@@ -24,16 +24,15 @@ function HomeMenuCard() {
                     }}
                 />
 
-                <Typography variant="h5" sx={{ fontFamily: " 'Chakra Petch', sans-serif", color: '#eeeeee', mt: 2 }}>
+                <Typography variant="h4" fontWeight={700} sx={{ fontFamily: " 'Chakra Petch', sans-serif", color: '#000', mt: 2 }}>
                     FRESC ORDINALS
                 </Typography>
 
-                <Stack direction='column' gap='1rem' alignItems='flex-start' sx={{ mt: 3 }}>
-                    <Typography fontFamily="'Chakra Petch', sans-serif" color='#f3f3f3'>The collection is composed of 77 pieces.
+                <Stack direction='column' gap='1rem' width='80%' display='flex' alignItems='center'>
+                    <Typography fontFamily="monospace" color='#bbb'>77 pieces
                     </Typography>
                     <Typography fontFamily="'Chakra Petch', sans-serif" color='#f3f3f3'>
                         With the innovative use of recursive inscription, FRESC invites connoisseurs to enter into a new dimension of digital artistry.
-
                     </Typography>
                 </Stack>
 
@@ -41,7 +40,7 @@ function HomeMenuCard() {
                     <Button component={RouterLink} to="/fresc" variant="contained" sx={{ backgroundColor: "#56a0cc" }}>
                         DISCOVER
                     </Button>
-                    <Button component={RouterLink} to="/fresc" variant="contained" sx={{ backgroundColor: "#cc9ad2" }}>
+                    <Button disabled component={RouterLink} to="/fresc" variant="contained" sx={{ backgroundColor: "#cc9ad2" }}>
                         MINT NOW
                     </Button>
                 </Stack>

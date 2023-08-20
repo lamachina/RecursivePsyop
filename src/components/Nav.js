@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link as RouterLink } from 'react-router-dom';
-import { AppBar, Toolbar, Typography, Button, Link, Avatar, Stack } from '@mui/material';
+import { AppBar, Toolbar, Typography, Button, Link, Avatar, Stack, useMediaQuery, useTheme } from '@mui/material';
 
 function Nav() {
+    const theme = useTheme();
+    const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
     return (
         <AppBar position="static">
             <Toolbar
@@ -19,15 +21,17 @@ function Nav() {
                             src='/punk.png'
                         />
                     </RouterLink>
-                    <Typography
-                        variant='h6'
-                        sx={{
-                            fontWeight: 700,
-                            fontFamily: " 'Chakra Petch', sans-serif",
-                        }}
-                    >
-                        Recursive Psyop
-                    </Typography>
+                    {!isMobile && (
+                        <Typography
+                            variant='h6'
+                            sx={{
+                                fontWeight: 700,
+                                fontFamily: " 'Chakra Petch', sans-serif",
+                            }}
+                        >
+                            Recursive Psyop
+                        </Typography>
+                    )}
                 </Stack>
                 <Stack direction='row' display='flex' alignContent='center' alignItems='center'>
 
