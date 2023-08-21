@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, CardContent, CardMedia, Typography, Link, Stack, Button } from '@mui/material';
 import { Link as RouterLink } from 'react-router-dom';
 
-function HomeMenuCard({ imageSrc, title, numberSupply, paragraph, linkUrl }) {
+function HomeMenuCard({ imageSrc, title, numberSupply, paragraph, linkUrl, discoDis }) {
     return (
         <Card raised
             sx={{
@@ -20,7 +20,8 @@ function HomeMenuCard({ imageSrc, title, numberSupply, paragraph, linkUrl }) {
                     alt="Home Menu Image"
                     sx={{
                         objectFit: 'contain',
-                        width: '100%'
+                        width: '100%',
+                        maxHeight: '280px'
                     }}
                 />
 
@@ -36,10 +37,10 @@ function HomeMenuCard({ imageSrc, title, numberSupply, paragraph, linkUrl }) {
                 </Stack>
 
                 <Stack direction='row' gap='1rem' justifyContent='space-between' alignItems='center' sx={{ mt: 3 }}>
-                    <Button component={RouterLink} to={linkUrl} variant="contained" sx={{ backgroundColor: "#56a0cc" }}>
+                    <Button disabled={discoDis} component={RouterLink} to={linkUrl} variant="contained" sx={{ backgroundColor: "#222" }}>
                         DISCOVER
                     </Button>
-                    <Button disabled component={RouterLink} to={linkUrl} variant="contained" sx={{ backgroundColor: "#cc9ad2" }}>
+                    <Button disabled component={RouterLink} to={linkUrl} variant="contained" sx={{ backgroundColor: "#56a0cc" }}>
                         MINT NOW
                     </Button>
                 </Stack>

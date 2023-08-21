@@ -25,13 +25,13 @@ function Home() {
                 This is a sample paragraph
             </Typography>
 
-            <Backdrop open={openBackdrop} sx={{ zIndex: 0, backgroundColor: '#333' }}>
+            <Backdrop open={openBackdrop} sx={{ zIndex: 0, backgroundColor: 'transparent' }}>
                 <Typography color={'#f8ff74'} fontFamily=" 'Chakra Petch', sans-serif" variant="h1" className="neonText">PSYOP</Typography>
             </Backdrop>
 
             <Link component={RouterLink} sx={{ textDecoration: 'none' }} to="/art" gutterBottom>
                 <Typography color='#fff'>
-                    cd /Art
+                    ~ cd /Art
                 </Typography>
             </Link>
         </Grid>

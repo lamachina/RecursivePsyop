@@ -10,25 +10,37 @@ function Art() {
                     ART?
                 </Typography>
                 <Typography variant='body1' color='#bbb' fontFamily={" 'Chakra Petch', sans-serif"}>
-                    Each collection is a fully recursive psyop
+                    Each collection is a fully?recursive=psyop
                 </Typography>
                 <Typography variant='body2' color='#eee' fontFamily={" 'Chakra Petch', sans-serif"}>
-                    Authentic Recursive Text
+                    Authentic. Recursive. Text.
                 </Typography>
             </Stack>
+
+            {/* PSYOPS */}
             <HomeMenuCard
                 imageSrc="/bg.jpg"
                 title="  FRESC ORDINALS"
                 numberSupply="77 pieces"
                 paragraph="With the innovative use of recursive inscription, enter into a new dimension of digital artifacts."
                 linkUrl="/fresc"
+                discoDis={false}
             />
             <HomeMenuCard
                 imageSrc="/hzbg.png"
                 title="HERZ STANDARD"
                 numberSupply="3,500 Frequencies"
-                paragraph="The fusion of hertz, blockchain technology, and art offers a remarkable opportunity for self-expression and exploration. By participating in the .Hz standard, individuals can engage with frequency not only as a scientific concept but also as a creative force that transcends traditional boundaries."
+                paragraph="Engage with frequency not only as a scientific concept but also as a creative force that transcends traditional boundaries."
                 linkUrl="/"
+                discoDis={true}
+            />
+            <HomeMenuCard
+                imageSrc="/bgpunki.png"
+                title="???"
+                numberSupply="..."
+                paragraph="..."
+                linkUrl="/"
+                discoDis={true}
             />
 
         </div>
