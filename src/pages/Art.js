@@ -35,7 +35,7 @@ function Art() {
                 discoDis={true}
             />
             <HomeMenuCard
-                imageSrc="/bgpunki.png"
+                imageSrc="/bgpunki.jpg"
                 title="???"
                 numberSupply="..."
                 paragraph="..."
