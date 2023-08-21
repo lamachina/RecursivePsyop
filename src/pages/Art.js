@@ -25,7 +25,7 @@ function Art() {
                 paragraph="With the innovative use of recursive inscription, enter into a new dimension of digital artifacts."
                 linkUrl="/fresc"
                 discoDis={false}
-                discoDisMint={false}
+                discoDisMint={true}
             />
             <HomeMenuCard
                 imageSrc="/hzbg.png"
