@@ -10,6 +10,7 @@ import "./App.css";
 import Fresc from './pages/Fresc';
 import Art from './pages/Art';
 import Team from './pages/Team';
+import CardBuy from './components/Frescs/CardBuy';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path="/art" element={<Art />} />
           <Route path="/team" element={<Team />} />
           <Route path="/fresc" element={<Fresc />} />
+          <Route path="/buyfresc" element={<CardBuy />} />
           {/*  <Route path="/bixel2" element={<Bixel2 />} />
           <Route path="/bixel3" element={<Bixel3 />} />
           <Route path="/bixel4" element={<Bixel4 />} /> */}

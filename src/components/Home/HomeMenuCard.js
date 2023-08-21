@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, CardContent, CardMedia, Typography, Link, Stack, Button } from '@mui/material';
 import { Link as RouterLink } from 'react-router-dom';
 
-function HomeMenuCard({ imageSrc, title, numberSupply, paragraph, linkUrl, discoDis }) {
+function HomeMenuCard({ imageSrc, title, numberSupply, paragraph, linkUrl, discoDis, discoDisMint }) {
     return (
         <Card raised
             sx={{
@@ -37,10 +37,28 @@ function HomeMenuCard({ imageSrc, title, numberSupply, paragraph, linkUrl, disco
                 </Stack>
 
                 <Stack direction='row' gap='1rem' justifyContent='space-between' alignItems='center' sx={{ mt: 3 }}>
-                    <Button disabled={discoDis} component={RouterLink} to={linkUrl} variant="contained" sx={{ backgroundColor: "#222" }}>
+                    <Button disabled={discoDis} component={RouterLink} to={linkUrl} variant="contained" sx={{
+                        backgroundColor: '#353535de', // setting bg to orange regardless of the disabled state
+                        color: '#eee',
+                        fontFamily: "'Chakra Petch', sans-serif",
+                        fontWeight: 700,
+                        '&:hover': {
+                            backgroundColor: '#e9e9e9de',
+                            color: '#000',
+                        },
+                    }}>
                         DISCOVER
                     </Button>
-                    <Button disabled component={RouterLink} to={linkUrl} variant="contained" sx={{ backgroundColor: "#56a0cc" }}>
+                    <Button disabled={discoDisMint} component={RouterLink} to={'/buyfresc'} variant="contained" sx={{
+                        backgroundColor: '#56a0cc', // setting bg to orange regardless of the disabled state
+                        color: '#fefefe',
+                        fontFamily: "'Chakra Petch', sans-serif",
+                        fontWeight: 700,
+                        '&:hover': {
+                            backgroundColor: '#e9e9e9',
+                            color: '#56a0cc',
+                        },
+                    }}>
                         MINT NOW
                     </Button>
                 </Stack>

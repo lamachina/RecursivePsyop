@@ -25,6 +25,7 @@ function Art() {
                 paragraph="With the innovative use of recursive inscription, enter into a new dimension of digital artifacts."
                 linkUrl="/fresc"
                 discoDis={false}
+                discoDisMint={false}
             />
             <HomeMenuCard
                 imageSrc="/hzbg.png"
@@ -33,6 +34,7 @@ function Art() {
                 paragraph="Engage with frequency not only as a scientific concept but also as a creative force that transcends traditional boundaries."
                 linkUrl="/"
                 discoDis={true}
+                discoDisMint={true}
             />
             <HomeMenuCard
                 imageSrc="/bgpunki.jpg"
@@ -41,6 +43,7 @@ function Art() {
                 paragraph="..."
                 linkUrl="/"
                 discoDis={true}
+                discoDisMint={true}
             />
 
         </div>
